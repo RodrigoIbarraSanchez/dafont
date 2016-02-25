@@ -22,7 +22,7 @@ angular.module('starter.controllers', [])
   .controller('WishCtrl', function($scope) {
 
     $scope.items = [
-      {nombre:'test', artista:'test2'},
+      {nombre:'Roboto', artista:'Christian Robertson'},
     ];
     $scope.nuevoItem = {nombre:'', artista:''};
     $scope.agregarItem = function(){

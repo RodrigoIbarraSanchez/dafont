@@ -3,6 +3,10 @@
     <ion-list>
       <ion-item ng-repeat="item in items" type="item-text-wrap">
         <h2>{{item.nombre}}</h2><small>{{item.artista}}</small>
+        <ion-option-button class="button-assertive"
+                           ng-click="edit(item)">
+          Eliminar
+        </ion-option-button>
       </ion-item>
     </ion-list>
 
@@ -16,6 +20,7 @@
       <button class="button button-full button-assertive" ng-click="agregarItem()">
         Agregar
       </button>
+      <p>Agrega a tu Wishlist que fuentes te gustaría tener en un futuro.</p>
     </div>
 
   </ion-content>
