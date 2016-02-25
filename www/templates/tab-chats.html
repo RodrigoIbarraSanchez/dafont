@@ -1,0 +1,22 @@
+<ion-view view-title="Wishlist">
+  <ion-content ng-controller="WishCtrl">
+    <ion-list>
+      <ion-item ng-repeat="item in items" type="item-text-wrap">
+        <h2>{{item.nombre}}</h2><small>{{item.artista}}</small>
+      </ion-item>
+    </ion-list>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="Fuente" ng-model="nuevoItem.nombre">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Artista" ng-model="nuevoItem.artista">
+      </label>
+      <button class="button button-full button-assertive" ng-click="agregarItem()">
+        Agregar
+      </button>
+    </div>
+
+  </ion-content>
+</ion-view>
